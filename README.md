@@ -1,7 +1,44 @@
-# llm-langchain-mysql
+# MySQL Q&A Chat App
 
-# install req
+This is a simple Streamlit App to showcase how a LLM can interact with a MySQL database. You can ask questions about data that is available in database, and the LLM will provide you answers in natural language.
 
-```pip install -r requirements.txt
+## Screenshots
 
+![App Screenshot](q&a.png)
+
+## Steps to run the app
+
+#### Create a virtual environment
+
+- Create a folder in your PC, and open it in a code editor (eg. VS Code).
+- Open the terminal and run following command.
+
+```bash
+  python -m venv env
+```
+
+#### Install Required dependancies
+
+- Here we have a requirements.txt file. we can install the libraries and packages mentioned there.
+
+```bash
+  pip install -r requirements.txt
+```
+
+#### Setup database
+
+- Here we have 'Chinook' database (Version 1.4.5) authored by Luis Rocha. This contains some tables with sample data.
+- If you can access 'phpMyAdmin', just go and import the db.sql file.
+- Otherwise, Run the following command in your terminal. Make sure to insert your username and password.
+
+```bash
+  mysql -u username -p < db.sql
+```
+
+#### Run the app
+
+- Once you get the above steps done, run the streamlit application.
+
+```bash
+  streamlit run main.py
 ```
