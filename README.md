@@ -35,6 +35,25 @@ This is a simple Streamlit App to showcase how a LLM can interact with a MySQL d
   mysql -u username -p < db.sql
 ```
 
+#### Create .env file
+
+- Now, you have to create a .env file and update the environmental variable.
+
+```bash
+  OPENAI_API_KEY = "sk-XXXXX"
+```
+
+```bash
+  MYSQL_URI = mysql+mysqlconnector://USERNAME:PASSWORD@localhost:PORT/DBNAME
+```
+
+| Parameter  | Eg        |
+| :--------- | :-------- |
+| `USERNAME` | `root`    |
+| `PASSWORD` | `1234`    |
+| `PORT`     | `3306`    |
+| `DBNAME`   | `Chinook` |
+
 #### Run the app
 
 - Once you get the above steps done, run the streamlit application.
